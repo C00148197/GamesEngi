@@ -1,1 +1,2 @@
-﻿LINK : fatal error LNK1104: cannot open file 'SDL2-d.lib'
+﻿SDL2main.lib(SDL_windows_main.obj) : error LNK2019: unresolved external symbol _SDL_main referenced in function _main_utf8
+C:\Users\gameuser\Desktop\Games Engi\Project2\Debug\Project1.exe : fatal error LNK1120: 1 unresolved externals

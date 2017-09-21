@@ -1,8 +1,11 @@
-
-
-
 //////################
 //bridge bitt two
+#include <SDL.h>
+using namespace std;
+#include <iostream>
+
+
+
 class DrawAPI
 {
 public:
@@ -20,15 +23,17 @@ class Character
 public:
 	virtual void Draw() = 0;
 };
+
 class Player : public Character
 {
 public:
-	Player(DrawAPI* api) {
-		this->api = api;)
+	Player(DrawAPI* api) 
+		{this->api = api;
+		}
 		void Draw() { api->Draw(); }
-		private
-			DrawAPI* api;
-	};
+private:
+	DrawAPI* api;
+};
 
 
 	//end refine
@@ -131,7 +136,7 @@ public:
 			Character* character = new Player(api);
 			character->Draw();
 			cin.get();
-		
+			return 0;
 	}
 	//end
 
