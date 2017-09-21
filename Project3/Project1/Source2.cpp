@@ -130,7 +130,7 @@ private:
 //#include "GraphicProxy.h"
 	using namespace std;
 
-	int main(void)
+	int main(int argc, char* argv[])
 	{
 			DrawAPI* api = new DrawImpl();
 			Character* character = new Player(api);
