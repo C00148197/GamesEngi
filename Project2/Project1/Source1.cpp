@@ -1,7 +1,7 @@
 //bit one a
 using namespace std;
 #include <iostream>
-#include "sdl.h"
+#include "SDL.h"
 #include <vector>
 class character {
 public:
@@ -41,7 +41,7 @@ public:
 	}
 };
 
-int main() {
+int main(int argc, char* argv[]) {
 
 	//	sdl_init(sdl_init_everything);
 //	sdl_quit();
@@ -55,6 +55,7 @@ int main() {
 	{
 		characters[i]->draw();
 	}
+	system("PAUSE");
 	return 0;
 }
 // end bit one and bit one b
