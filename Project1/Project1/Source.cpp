@@ -6,7 +6,7 @@ class Character
 {
 public:
 	Character() {}
-		void Print() { cout << "printin boi" << endl; }
+		void Print() { cout << "printing" << endl; }
 };
 
 class HandleToCharacter

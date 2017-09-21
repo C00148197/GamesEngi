@@ -1,5 +1,5 @@
 //////################
-//bridge bitt two
+//bridge bit two
 #include <SDL.h>
 using namespace std;
 #include <iostream>
@@ -132,11 +132,13 @@ private:
 
 	int main(int argc, char* argv[])
 	{
-			DrawAPI* api = new DrawImpl();
-			Character* character = new Player(api);
-			character->Draw();
-			cin.get();
-			return 0;
+		GraphicProxy gp;
+		gp.Draw();
+		DrawAPI* api = new DrawImpl();
+		Character* character = new Player(api);
+		character->Draw();
+		cin.get();
+		return 0;
 	}
 	//end
 
