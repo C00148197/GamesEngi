@@ -1,0 +1,11 @@
+﻿  State.cpp
+  Source2.cpp
+c:\users\gameuser\desktop\games engi\fsm\project1\source2.cpp(3): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Jumping.cpp
+  InputHandler.cpp
+c:\users\gameuser\desktop\games engi\fsm\project1\inputhandler.h(3): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Idle.cpp
+  Command.cpp
+  Climbing.cpp
+  Animation.cpp
+  Generating Code...
