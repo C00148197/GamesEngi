@@ -5,7 +5,7 @@
 
 void Idle::jumping(Animation* a)
 {
-	cout << "B" << endl;
+	cout << "Atk" << endl;
 	a->setCurrent(new Jumping());
 	delete this;
 }

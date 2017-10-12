@@ -61,12 +61,13 @@ int main(int argc, char* argv[])
 
 	// handle events
 
-	Animation fsm; int i = 0;
+	Animation fsm; 
+	int i = 0;
 
 
 
 
-	SDL_Surface * image = IMG_Load("walk_f.png");
+	SDL_Surface * image = IMG_Load("walk_f2.png");
 	SDL_Texture * texture = SDL_CreateTextureFromSurface(renderer,
 		image);
 	
@@ -77,54 +78,11 @@ int main(int argc, char* argv[])
 	while (!quit)
 	{
 		Uint32 ticks = SDL_GetTicks();
-		Uint32 seconds = ticks / 1000;
+		Uint32 seconds = ticks / 300;
 		int sprite = seconds % 3;
 
 		SDL_Rect srcrect = { sprite * 256, ySprite, 256, 256 };
 		SDL_Rect dstrect = { 256, 256, 256, 256 };
-
-		//if (sprite != 0 && sprite % 3 == 0)
-		//{
-
-		//	srcrect = { sprite * 256, 256, 256, 256 };
-		//	dstrect = { 256, 256, 256, 256 };
-		//	ySprite *= 2;
-		//}
-
-	
-		//SDL_WaitEvent(&event);
-
-		//switch (event.type)
-		//{
-		//case SDL_QUIT:
-		//	quit = true;
-		//	break;
-		//}
-
-
-		if (i == 0)
-		{
-			//std::this_thread::sleep_for(std::chrono::milliseconds)
-
-			//or call idle 
-
-			//std::this_thread::sleep_for(2s);
-			std::this_thread::sleep_for(std::chrono::milliseconds::duration(1000));
-			i = 1;
-		}
-
-		else if (i == 1)
-		{
-	
-			
-
-			//std::this_thread::sleep_for(2s);
-			std::this_thread::sleep_for(std::chrono::milliseconds::duration(1000));
-
-			i = 0;
-
-		}
-
 
 
 		while (SDL_PollEvent(&event))
@@ -136,9 +94,9 @@ int main(int argc, char* argv[])
 			{
 				switch (event.key.keysym.sym)
 				{
-
+				default:
 				case SDLK_LEFT: {
-					image = IMG_Load("walk_b.png");
+					image = IMG_Load("atk.png");
 					texture = SDL_CreateTextureFromSurface(renderer,
 						image);
 					fsm.jumping();
