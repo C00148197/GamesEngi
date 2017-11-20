@@ -1,0 +1,4 @@
+﻿  RenderSystem.cpp
+c:\users\gameuser\desktop\games engi\ecs\ai_lab\rendersystem.cpp(8): warning C4018: '<': signed/unsigned mismatch
+  AI_Lab.vcxproj -> C:\Users\gameuser\Desktop\Games Engi\ECS\Debug\AI_Lab.exe
+  AI_Lab.vcxproj -> C:\Users\gameuser\Desktop\Games Engi\ECS\Debug\AI_Lab.pdb (Partial PDB)
